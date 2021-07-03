@@ -10,7 +10,7 @@ const maxLength = (len) => (val) => !(val) || (val.length <= len)
 const minLength = (len) => (val) => (val) && (val.length >= len)
 const validEmail = (val) => /^[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,4}$/i.test(val)
 const isNumber = (val) => !isNaN(Number(val));
-const day = 'Monday'
+//const day = 'Monday'
 
 const override = css`
   display: block;
