@@ -3,8 +3,6 @@ import { Control, LocalForm, Errors } from 'react-redux-form';
 import { Col, Container, Label, Row, Button, Input, FormGroup} from 'reactstrap';
 import axios from 'axios';
 import BounceLoader from "react-spinners/BounceLoader";
-import ClipLoader from "react-spinners/ClipLoader";
-import Loader from 'react-loader';
 import { css } from "@emotion/react";
 
 const required = (val) => val && val.length;
@@ -12,6 +10,7 @@ const maxLength = (len) => (val) => !(val) || (val.length <= len)
 const minLength = (len) => (val) => (val) && (val.length >= len)
 const validEmail = (val) => /^[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,4}$/i.test(val)
 const isNumber = (val) => !isNaN(Number(val));
+const day = 'Monday'
 
 const override = css`
   display: block;
